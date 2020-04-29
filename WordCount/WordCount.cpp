@@ -351,7 +351,7 @@ void main(int argc, char** argv) {
 			path[j++] = (char*)"\0";
 		}*/
 	}
-	char a[] = "";
+	char a[500] = "";
 	char* result = a;
 	Run(path, command, result);  // 启动统计程序，得到结果字符串
 	writeToFile(result);
