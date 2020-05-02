@@ -1,0 +1,2 @@
+F:\Teaching Assistant\newTest\WordCount\x64\Debug\UnitTest.dll.lastcodeanalysissucceeded
+F:\Teaching Assistant\newTest\WordCount\UnitTest\x64\Debug\NativeCodeAnalysis.read.1.tlog

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+      <FILENAME>Function.cpp</FILENAME>
+      <LINE>10</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>函数使用了堆栈的“44124”个字节: 超过了 /analyze:stacksize '16384'。 请考虑将某些数据移到堆中。</DESCRIPTION>
+    <FUNCTION>CountWordsFrequency</FUNCTION>
+    <DECORATED>?CountWordsFrequency@@YAXPEAD@Z</DECORATED>
+    <FUNCLINE>10</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+      <FILENAME>Function.cpp</FILENAME>
+      <LINE>122</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>“s”可能是“0”: 这不符合函数“fgets”的规范。</DESCRIPTION>
+    <FUNCTION>LineCount</FUNCTION>
+    <DECORATED>?LineCount@@YAHPEAD@Z</DECORATED>
+    <FUNCLINE>114</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>115</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>116</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>117</LINE>
+        <COLUMN>1</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>119</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“s”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>120</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>122</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“s”是对“fgets”的输入(在 f:\windows kits\10\include\10.0.18362.0\ucrt\stdio.h:193 处声明)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>122</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>跳过此循环(假定“fgets(s, 200, file)!=0”为 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>122</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“s”不应为 NULL，因为这与“fgets”上的 SAL 批注不一致</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+      <FILENAME>Function.cpp</FILENAME>
+      <LINE>188</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“path”的引用。</DESCRIPTION>
+    <FUNCTION>ScanPath</FUNCTION>
+    <DECORATED>?ScanPath@@YAPEAPEADHPEAPEAD@Z</DECORATED>
+    <FUNCLINE>183</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>184</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“path”为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>185</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>185</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>186</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>186</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“i&lt;length”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此分支(假定“parameter[i][0]!=45”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“path”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+      <FILENAME>Function.cpp</FILENAME>
+      <LINE>201</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“command”的引用。</DESCRIPTION>
+    <FUNCTION>ScanCommand</FUNCTION>
+    <DECORATED>?ScanCommand@@YAPEAPEADHPEAPEAD@Z</DECORATED>
+    <FUNCLINE>195</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>196</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“command”为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“i&lt;length”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>200</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此分支(假定“parameter[i][0]==45”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“command”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+      <FILENAME>Function.cpp</FILENAME>
+      <LINE>259</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>“file”可能是“0”: 这不符合函数“fprintf”的规范。</DESCRIPTION>
+    <FUNCTION>writeToFile</FUNCTION>
+    <DECORATED>?writeToFile@@YAXPEAD@Z</DECORATED>
+    <FUNCLINE>255</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>256</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>257</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“file”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>258</LINE>
+        <COLUMN>1</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“!!((!er))”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>259</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“file”是“fprintf”的输入/输出参数(在 f:\windows kits\10\include\10.0.18362.0\ucrt\stdio.h:828 处声明)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>259</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“file”不应为 NULL，因为这与“fprintf”上的 SAL 批注不一致</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+      <FILENAME>Function.cpp</FILENAME>
+      <LINE>260</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>“file”可能是“0”: 这不符合函数“fclose”的规范。查看第 259 行以找出可能会发生此情况的前一位置</DESCRIPTION>
+    <FUNCTION>writeToFile</FUNCTION>
+    <DECORATED>?writeToFile@@YAXPEAD@Z</DECORATED>
+    <FUNCLINE>255</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>256</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>257</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“file”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>258</LINE>
+        <COLUMN>1</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“!!((!er))”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>259</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“file”是“fprintf”的输入/输出参数(在 f:\windows kits\10\include\10.0.18362.0\ucrt\stdio.h:828 处声明)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>260</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“file”是对“fclose”的输入(在 f:\windows kits\10\include\10.0.18362.0\ucrt\stdio.h:147 处声明)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>F:\Teaching Assistant\newTest\WordCount\WordCount\</FILEPATH>
+        <FILENAME>Function.cpp</FILENAME>
+        <LINE>260</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“file”不应为 NULL，因为这与“fclose”上的 SAL 批注不一致</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
