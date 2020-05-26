@@ -108,7 +108,7 @@ int WordCount(char* Path) {    // 计算单词个数
 			is_word = 0;    // 记录不处于单词状态
 	}
 	fclose(file);
-	printf("单词数：%d", count);
+	printf("单词数：%d\n", count);
 	return count;
 }
 
@@ -130,7 +130,7 @@ int LineCount(char* Path) {    // 计算行数
 	}
 	count++;
 	fclose(file);
-	printf("行数：%d", count);
+	printf("行数：%d\n", count);
 	return count;
 }
 
@@ -224,8 +224,9 @@ void Run(char* path[100], char* command[20], char* result) {
 		if (strcmp(command[i], "\0") == 0) {
 			CodeCount(path[j]);
 			WordCount(path[j]);
+			LineCount(path[j]);
 		}
-			//CountWordsFrequency(path[j]);
+		//CountWordsFrequency(path[j]);
 		while (strcmp(command[i], "\0") != 0)
 		{
 			switch (command[i][1])

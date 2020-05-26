@@ -1,15 +1,5 @@
 ﻿  Function.cpp
 F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(128,4): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(234,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(236,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(237,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(238,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(241,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(243,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(244,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(245,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(249,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(250,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(251,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(252,14): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  WordCount.cpp
+  正在生成代码...
   WordCount.vcxproj -> F:\Teaching Assistant\newTest\WordCount\x64\Debug\WordCount.exe

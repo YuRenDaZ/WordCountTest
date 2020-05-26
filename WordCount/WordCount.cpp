@@ -1,6 +1,10 @@
 ﻿#include "Function.h"
 
-void main(int argc, char** argv) {
+int main(int argc, char** argv) {
+	if (argc <= 1) {
+		printf("请输入程序命令行参数！");
+		return 0;
+	}
 	int i, j = 0;
 	char* command[20];
 	char* path[100];
@@ -29,5 +33,6 @@ void main(int argc, char** argv) {
 	char* result = a;
 	Run(path, command, result);  // 启动统计程序，得到结果字符串
 	writeToFile(result);
+	return 0;
 }
 
