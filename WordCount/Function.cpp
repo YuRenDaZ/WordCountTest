@@ -80,11 +80,13 @@ int CodeCount(char* Path) {    // 计算字符个数
 	int count = 0;
 	int num = 0;
 
-	while ((code = fgetc(file)) != EOF)     // 读取字符直到结束
+	while ((code = fgetc(file)) != EOF) {     // 读取字符直到结束
+		code = fgetc(file);
+		if (code == EOF) break;
 		count += ((code != ' ') && (code != '\n') && (code != '\t'));    // 判断是否是字符    
-
+	}
 	fclose(file);
-
+	printf("字符数：%d\n", num);
 	return num;
 }
 
@@ -99,15 +101,14 @@ int WordCount(char* Path) {    // 计算单词个数
 
 	while ((word = fgetc(file)) != EOF) {
 		if ((word >= 'a' && word <= 'z') || (word >= 'A' && word <= 'Z')) {    // 判断是否是字母            
-			count += (is_word == 0);
-			count++;
+			count += (is_word != 0);
 			is_word = 1;    // 记录单词状态
 		}
 		else
 			is_word = 0;    // 记录不处于单词状态
 	}
 	fclose(file);
-
+	printf("单词数：%d", count);
 	return count;
 }
 
@@ -115,20 +116,19 @@ int LineCount(char* Path) {    // 计算行数
 	FILE* file = NULL;
 	errno_t er = fopen_s(&file, Path, "r");
 	assert(file != NULL);
-
-	char* s = (char*)malloc(200 * sizeof(char));
 	int count = 0;
+	char ch;
 	int i = 0;
-	for (; fgets(s, 200, file) != NULL; count++) { 
-		while (i < 2)
+	while (!feof(file))
+	{
+		if ((ch = fgetc(file)) != EOF)
 		{
-			_sleep(500);
-			i++;
-		};
-		i = 0;
-	}    // 逐次读行
-
-	free(s);
+			if ((ch = fgetc(file)) == '\t') // 识别换行符
+				count++;
+			_sleep(250);
+		}
+	}
+	count++;
 	fclose(file);
 	printf("行数：%d", count);
 	return count;
@@ -221,8 +221,11 @@ void Run(char* path[100], char* command[20], char* result) {
 	//char* result = b;
 	int i = 0, j = 0;
 	while (strcmp(path[j], "\0") != 0) {
-		if (strcmp(command[i], "\0") == 0)
-			CountWordsFrequency(path[j]);
+		if (strcmp(command[i], "\0") == 0) {
+			CodeCount(path[j]);
+			WordCount(path[j]);
+		}
+			//CountWordsFrequency(path[j]);
 		while (strcmp(command[i], "\0") != 0)
 		{
 			switch (command[i][1])
@@ -233,7 +236,6 @@ void Run(char* path[100], char* command[20], char* result) {
 				sprintf(temp, "%d", count);
 				result = strcat(result, temp);
 				result = strcat(result, "\n");
-				printf("%s", result);
 				break;
 			case 'l':
 				result = strcat(result, "行数：");
