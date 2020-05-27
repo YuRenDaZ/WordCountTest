@@ -1,5 +1,7 @@
 ﻿  Function.cpp
-F:\Teaching Assistant\newTest\WordCount\WordCount\Function.cpp(128,4): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+C:\Users\12921\Desktop\新建文件夹\WordCountTest\WordCount\Function.cpp(57,4): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
   WordCount.cpp
+C:\Users\12921\Desktop\新建文件夹\WordCountTest\WordCount\WordCount.cpp(4,6): warning C4101: “i”: 未引用的局部变量
   正在生成代码...
-  WordCount.vcxproj -> F:\Teaching Assistant\newTest\WordCount\x64\Debug\WordCount.exe
+  LINK : 没有找到 C:\Users\12921\Desktop\新建文件夹\WordCountTest\x64\Debug\WordCount.exe 或上一个增量链接没有生成它；正在执行完全链接
+  WordCount.vcxproj -> C:\Users\12921\Desktop\新建文件夹\WordCountTest\x64\Debug\WordCount.exe
